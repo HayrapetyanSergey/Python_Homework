@@ -1,10 +1,11 @@
 def pop(data, index):
+    
     if index == None:
         tmp = data [len(data)-1]
         del data[len(data)-1]
         return tmp
 
-    elif index < len(data):
+    elif 0 <= index < len(data):
         tmp = data[index]
         del data[index]
         return tmp
